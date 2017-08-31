@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>
+    <h1><%= @title %></h1>
+    </th>
+  </tr>
+<ul>
+  <% @campsites.each do |campsite| %>
+  <tr>
+    <td>
+    <li>
+      <td><%= link_to campsite.name, campsite_path(campsite) %></td>
+    </li>
+    </td>
+  </tr>
+  <% end %>
+</ul>
+</table>

@@ -1,0 +1,17 @@
+<h2>Recipe: <%= @recipe[0][0] %> </h2>
+
+<h3>Servings:
+<%= @recipe[0][1] %>
+</h3>
+<h4>
+
+  Comments:
+  <% @comment.each do |idea| %>
+  <li>
+    <%= idea %>
+  </li>
+  <% end %>
+
+</h4>
+</br>
+<button type="button" name="button"><a href="/">Recipes</a></button>
